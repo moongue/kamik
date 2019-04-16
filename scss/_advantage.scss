@@ -1,0 +1,35 @@
+#advantage {
+  margin-top: 85px;
+  .title {
+    color: $black;
+    font-family: 'Proxima Nova Light', sans-serif;
+    font-size: 46px;
+    text-align: center;
+    font-weight: 200;
+    @include sm(font-size, 28px);
+  }
+  .blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include xs-block() {
+      justify-content: space-around;
+    }
+    .one-advantage {
+      flex-basis: 32%;
+      display: flex;
+      align-items: flex-start;
+      margin-top: 95px;
+      min-width: 310px;
+      @include xs(margin-top, 30px);
+      p {
+        padding-left: 15px;
+        font-size: 21px;
+        @include xs-block() {
+          font-size: 16px;
+          padding-top: 15px;
+        }
+      }
+    }
+  }
+}

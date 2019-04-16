@@ -1,0 +1,85 @@
+#banner {
+  margin-top: 60px;
+  .slider {
+    .slide {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .description {
+        position: absolute;
+        bottom: 5px;
+        left: 100px;
+        width: 100%;
+        @include sm(left, 50px);
+        @include xs(left, calc((100% - 249px) / 2));
+        .top {
+          display: inline-block;
+          padding: 10px;
+          font-size: 22px;
+          font-weight: 600;
+          color: $white;
+          text-transform: uppercase;
+          background: $red-two;
+          max-width: 340px;
+          @include sm-block() {
+            font-size: 16px;
+          }
+        }
+        ul {
+          background: $blue-60;
+          padding: 10px 20px;
+          max-width: 430px;
+          width: 100%;
+          @include sm(max-width, 320px);
+          @include xs(display, none);
+          li {
+            color: $white;
+            margin: 4px 0;
+            font-size: 14px;
+            position: relative;
+            @include sm(font-size, 12px);
+            &:before {
+              content: '';
+              width: 5px;
+              height: 5px;
+              position: absolute;
+              left: -12px;
+              top: 5px;
+              background: $white;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+    .slick-arrow {
+      position: absolute;
+      outline: none;
+      font-size: 0;
+      height: 70px;
+      width: 70px;
+      border: none;
+      top: calc((100% - 35px) / 2);
+      z-index: 2;
+      opacity: .3;
+      &:hover {
+        opacity: 1;
+        transition: all .3s;
+      }
+      @include sm-block() {
+        width: 30px;
+        height: 30px;
+      }
+      &.slick-prev {
+        background: url("../images/icons/arrow.svg") no-repeat;
+        left: 1%;
+        transform: rotate(180deg);
+      }
+      &.slick-next {
+        background: url("../images/icons/arrow.svg") no-repeat;
+        right: 1%;
+      }
+    }
+  }
+}

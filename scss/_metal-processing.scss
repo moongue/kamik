@@ -1,0 +1,56 @@
+#metal-processing {
+  margin-top: 55px;
+  @include sm(margin-top, 15px);
+  .title {
+    color: $black;
+    font-size: 46px;
+    text-align: center;
+    font-weight: 800;
+    @include sm(font-size, 28px);
+  }
+  .blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include sm-block() {
+      justify-content: space-around;
+    }
+    .one-process {
+      flex-basis: 23%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 80px;
+      min-width: 280px;
+      @include sm-block() {
+        margin-top: 25px;
+      }
+      .block-img {
+        height: 160px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      a {
+        margin-top: 35px;
+        font-size: 18px;
+        color: $red-two;
+        border-bottom: 2px solid $red-two;
+        padding-bottom: 3px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      p {
+        color: $black;
+        margin-top: 50px;
+        font-size: 16px;
+        .price {
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
