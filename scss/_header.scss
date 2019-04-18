@@ -1,9 +1,11 @@
 #header {
   padding-top: 25px;
+  @include xs(padding-top, 0);
   .logo img {
     width: 100%;
     max-width: 213px;
     height: auto;
+    @include xs(width, 80%);
   }
   .location {
     max-width: 310px;

@@ -1,5 +1,6 @@
 #banner {
   margin-top: 60px;
+  @include xs(margin-top, 20px);
   .slider {
     .slide {
       position: relative;

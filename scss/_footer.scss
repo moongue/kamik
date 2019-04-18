@@ -1,0 +1,73 @@
+#footer {
+  margin-top: 60px;
+  .map {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .content {
+    background: $bg-dark;
+    padding: 30px 0;
+    p {
+      color: $white;
+      line-height: 20px;
+      font-size: 14px;
+    }
+    .title {
+      font-size: 24px;
+      font-family: 'Proxima Nova Bold', sans-serif;
+      text-transform: uppercase;
+      color: $white;
+      margin-bottom: 30px;
+    }
+    .mail {
+      color: $blue;
+      border-bottom: 1px solid $blue;
+    }
+    .call {
+      margin-top: 20px;
+      .get-call {
+        padding: 10px 15px;
+        background: $red-two;
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+    .navigation {
+      background: $blue-60;
+      padding: 13px 16px 13px 13px;
+      ul {
+        li {
+          margin-top: 15px;
+          &:first-child {
+            margin-top: 0;
+          }
+          a {
+            color: $white;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .logo-footer {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .widgets {
+      margin-top: 13px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .align {
+      @include sm(margin, 0 auto);
+    }
+  }
+}

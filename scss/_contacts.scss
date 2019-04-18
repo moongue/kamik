@@ -1,0 +1,142 @@
+#contacts {
+  .title {
+    padding-bottom: 70px;
+    border-bottom: 2px solid $blue-four;
+    font-size: 42px;
+    color: $black;
+    @include sm-block() {
+      padding-bottom: 30px;
+      font-size: 34px;
+    }
+    @include xs(font-size, 24px);
+  }
+  p {
+    font-size: 18px;
+    color: $black-two;
+    span {
+      font-family: 'Proxima Nova Bold', sans-serif;
+      font-size: 18px;
+    }
+  }
+  a {
+    color: $blue;
+  }
+  .subtitle {
+    font-size: 14px;
+    color: $black;
+    padding-bottom: 7px;
+  }
+  .description {
+    margin-top: 50px;
+    .address {
+      ul {
+        li {
+          margin-top: 7px;
+        }
+      }
+    }
+    .time {
+      margin-top: 10px;
+
+      p {
+        margin-top: 8px;
+      }
+    }
+    .department {
+      ul {
+        li {
+          margin-top: 15px;
+          .mail {
+            font-family: 'Proxima Nova Bold', sans-serif;
+          }
+        }
+      }
+    }
+    .requisites {
+      margin-top: 10px;
+      ul li {
+        margin-top: 10px;
+
+      }
+    }
+    .way {
+      margin-top: 15px;
+      p {
+        font-size: 14px;
+        margin-top: 10px;
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+    .scheme {
+      display: flex;
+      margin-top: 10px;
+      @include sm-block() {
+        flex-direction: column;
+        align-items: center;
+      }
+      .detail {
+        background: $white-three;
+        flex-basis: 34%;
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+        .title-detail {
+          padding: 30px 0;
+          text-align: center;
+          font-family: 'Proxima Nova Bold',sans-serif;
+          color: $black;
+          text-transform: uppercase;
+          font-size: 22px;
+          border-bottom: 10px solid transparent;
+          border-image: $blue-gradient;
+          border-image-slice: 1;
+        }
+        .logo {
+          margin: 30px;
+          max-width: 341px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .information {
+          p {
+            color: $black;
+            margin-top: 4px;
+            font-size: 20px;
+            @include md(font-size, 14px);
+            &.white {
+              color: $white;
+              font-family: 'Proxima Nova Bold' ,sans-serif;
+            }
+          }
+          .coordinates {
+            padding: 15px 30px;
+            background: $blue-five;
+            margin-right: 25px;
+          }
+          .schedule {
+            margin-top: 15px;
+            padding: 0 60px 0 30px;
+            .offset {
+              margin-top: 15px;
+            }
+            .offset-small {
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+      .map {
+        flex-basis: 60%;
+        @include lg(flex-basis, 66%);
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

@@ -34,10 +34,31 @@ input[type=text] {
     align-items: center;
   }
 }
+.lg-hide {
+  @include lg(display, none);
+}
 .md-show {
   display: none;
   @include md(display, block);
 }
 .md-hide {
   @include md(display, none !important);
+}
+.sm-hide {
+  @include sm(display, none);
+}
+.title-page {
+  font-size: 28px;
+  color: $dark;
+  margin-bottom: 50px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 5px;
+    background: $red-two;
+    bottom: -20px;
+    left: 0;
+  }
 }

@@ -1,0 +1,43 @@
+#portfolio {
+  margin-top: 20px;
+  .title {
+    color: $black;
+    font-size: 18px;
+  }
+  .works {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include xs-block() {
+      justify-content: space-around;
+    }
+    .work {
+      margin-top: 20px;
+      position: relative;
+      background: $white-four;
+      padding: 0 40px;
+      flex-basis: 17%;
+      min-width: 270px;
+      box-sizing: border-box;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .description {
+        background: #f8110b;
+        padding: 15px 10px;
+        font-family: 'Proxima Nova Bold', sans-serif;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 16px;
+        position: absolute;
+        left: 40px;
+        bottom: 0;
+        @include sm-block() {
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

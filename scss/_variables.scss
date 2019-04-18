@@ -1,8 +1,22 @@
 $white: #fff;
+$white-two: #f5f5f5;
+$white-three: #eaeceb;
+$white-four: #e9ecf3;
 $grey: #87726d;
+$grey-two: #8a898f;
+$grey-three: #dedede;
 $blue: #5957bc;
+$blue-two: #4750af;
+$blue-three: #65b3e3;
+$blue-four: #4e57b2;
+$blue-five: #188ac8;
 $black: #000;
+$black-two: #51333d;
+$dark: #482e47;
+$bg-dark: #132146;
 $red: #ea5e47;
 $red-two: #d51814;
+$red-three: #c4213c;
 
 $blue-60: rgba(89, 87, 188, .6);
+$blue-gradient: linear-gradient(45deg, $blue-five 30%, $white-three 60% );

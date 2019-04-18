@@ -30,6 +30,51 @@
           padding-top: 15px;
         }
       }
+      img {
+        @include xs-block() {
+          max-width: 65px;
+          height: auto;
+        }
+      }
+    }
+  }
+  .title-laser {
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: 56px;
+    color: $grey-two;
+    @include sm(font-size, 36px);
+    @include xs-block() {
+      font-size: 28px;
+      margin-top: 40px;
+    }
+  }
+  .advantages-list {
+    margin-top: 55px;
+    ul {
+      padding-left: 40px;
+      li {
+        margin-top: 25px;
+        font-size: 18px;
+        color: $black;
+        max-width: 860px;
+        position: relative;
+        &:before {
+          content: '';
+          width: 5px;
+          height: 5px;
+          background: $red-three;
+          position: absolute;
+          left: -18px;
+          top: 7px;
+          border-radius: 50%;
+        }
+        span {
+          font-weight: 600;
+        }
+      }
     }
   }
 }
