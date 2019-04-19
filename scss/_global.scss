@@ -62,3 +62,16 @@ input[type=text] {
     left: 0;
   }
 }
+
+.way-steps {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  a {
+    color: $blue;
+    font-size: 18px;
+  }
+  img {
+    padding: 0 5px;
+  }
+}

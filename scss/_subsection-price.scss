@@ -1,0 +1,29 @@
+#subsection-price {
+  .navigation-page {
+    ul {
+      padding-left: 30px;
+      li {
+        margin-top: 7px;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          background: $grey;
+          top: 4px;
+          left: -15px;
+          border-radius: 50%;
+        }
+        a {
+          color: $blue-five;
+          border-bottom: 1px solid $blue-five;
+        }
+      }
+    }
+  }
+  p {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+}
