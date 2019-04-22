@@ -123,20 +123,29 @@
       @include md-block() {
         max-width: 100%;
         margin-top: 15px;
+        margin-left: 0;
         width: 100%;
       }
       .slider-video {
-        width: 93%;
+        width: 100%;
         .slide {
           max-width: 470px;
           position: relative;
+          padding-bottom: 56.25%;
+          padding-top: 30px;
+          height: 0;
+          overflow: hidden;
+
           @include md-block() {
             display: table !important;
             margin: 0 auto;
           }
-          img {
+          iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
+            height: 100%;
           }
         }
         .slick-arrow {

@@ -22,10 +22,28 @@
   font-style: normal;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Proxima Nova Regular', sans-serif;
   background: #fff;
   color: #87726d;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content-page {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .wrapper {
@@ -937,6 +955,9 @@ input[type=text] {
 
 #footer {
   margin-top: 60px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 #footer .map {
@@ -1024,7 +1045,7 @@ input[type=text] {
 }
 
 #contacts .title {
-  padding-bottom: 70px;
+  padding-bottom: 40px;
   border-bottom: 2px solid #4e57b2;
   font-size: 42px;
   color: #000;
@@ -1703,17 +1724,22 @@ input[type=text] {
   #subsection-services .information .video {
     max-width: 100%;
     margin-top: 15px;
+    margin-left: 0;
     width: 100%;
   }
 }
 
 #subsection-services .information .video .slider-video {
-  width: 93%;
+  width: 100%;
 }
 
 #subsection-services .information .video .slider-video .slide {
   max-width: 470px;
   position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 960px) {
@@ -1723,9 +1749,12 @@ input[type=text] {
   }
 }
 
-#subsection-services .information .video .slider-video .slide img {
+#subsection-services .information .video .slider-video .slide iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 #subsection-services .information .video .slider-video .slick-arrow {
