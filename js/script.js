@@ -16,6 +16,8 @@ function slider () {
     });
 }
 
+
+
 function sliderVideo() {
     $(function () {
         $('.slider-video').slick({

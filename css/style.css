@@ -154,6 +154,7 @@ input[type=text] {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .way-steps a {
@@ -305,11 +306,20 @@ input[type=text] {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 @media screen and (max-width: 960px) {
   #header .block-navigation {
     display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #header .block-navigation {
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 16px;
   }
 }
 
@@ -346,7 +356,8 @@ input[type=text] {
 
 @media screen and (max-width: 780px) {
   #header .block-navigation nav ul li {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-right: 0;
   }
 }
 
@@ -382,8 +393,14 @@ input[type=text] {
   color: #fff;
   padding: 25px 5px;
   border-radius: 0 4px 4px 0;
-  -webkit-box-shadow: 10px 10px 5px 0px #f7eff7;
-  box-shadow: 10px 10px 5px 0px #f7eff7;
+  -webkit-box-shadow: 10px 10px 5px 0 #f7eff7;
+  box-shadow: 10px 10px 5px 0 #f7eff7;
+}
+
+@media screen and (max-width: 560px) {
+  #header .block-navigation .download-price p {
+    font-size: 14px;
+  }
 }
 
 #banner {
@@ -1307,8 +1324,8 @@ input[type=text] {
   position: relative;
   background: #e9ecf3;
   padding: 0 40px;
-  -ms-flex-preferred-size: 17%;
-  flex-basis: 17%;
+  -ms-flex-preferred-size: 24%;
+  flex-basis: 24%;
   min-width: 270px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1321,11 +1338,11 @@ input[type=text] {
 
 #portfolio .works .work .description {
   background: #f8110b;
-  padding: 15px 10px;
+  padding: 10px 15px;
   font-family: 'Proxima Nova Bold', sans-serif;
   color: #fff;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   position: absolute;
   left: 40px;
   bottom: 0;
@@ -1385,7 +1402,7 @@ input[type=text] {
 #price .items .item .description {
   background: #f8110b;
   font-family: 'Proxima Nova Bold', sans-serif;
-  padding: 15px 10px;
+  padding: 10px 15px;
   color: #fff;
   text-transform: uppercase;
   font-size: 16px;
@@ -1882,6 +1899,120 @@ input[type=text] {
 #subsection-price p {
   margin-top: 15px;
   font-size: 18px;
+  line-height: 24px;
+}
+
+#subsection-price p .telephone {
+  color: #4750af;
+  font-size: 24px;
+  font-family: 'Proxima Nova Bold',sans-serif;
+}
+
+#subsection-price p a {
+  color: #4e57b2;
+  border-bottom: 1px solid #65b3e3;
+}
+
+#subsection-price .block-table {
+  margin-top: 35px;
+}
+
+#subsection-price .block-table .title-table {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 24px;
+}
+
+#subsection-price .block-table .table {
+  margin-top: 8px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 960px) {
+  #subsection-price .block-table .table {
+    overflow-x: scroll;
+  }
+}
+
+#subsection-price .block-table .table .row .col {
+  margin: 0 5px;
+}
+
+#subsection-price .block-table .table .row .col:nth-child(1) {
+  -ms-flex-preferred-size: 10%;
+  flex-basis: 10%;
+}
+
+#subsection-price .block-table .table .row .col:nth-child(2) {
+  -ms-flex-preferred-size: 20%;
+  flex-basis: 20%;
+}
+
+#subsection-price .block-table .table .row .col:nth-child(3) {
+  -ms-flex-preferred-size: 11%;
+  flex-basis: 11%;
+}
+
+#subsection-price .block-table .table .row .col:nth-child(4) {
+  -ms-flex-preferred-size: 11%;
+  flex-basis: 11%;
+}
+
+#subsection-price .block-table .table .row .col:nth-child(5) {
+  -ms-flex-preferred-size: 28%;
+  flex-basis: 28%;
+}
+
+#subsection-price .block-table .table .row .col:nth-child(6) {
+  -ms-flex-preferred-size: 16%;
+  flex-basis: 16%;
+}
+
+#subsection-price .block-table .table .block {
+  background: #e9ecf3;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #4750af;
+}
+
+@media screen and (max-width: 780px) {
+  #subsection-price .block-table .table .block {
+    font-size: 14px;
+    height: 26px;
+  }
+}
+
+#subsection-price .block-table .table .block-top {
+  padding: 0 4px;
+  font-size: 14px;
+  color: #000;
+  background: #c9d4e8;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#subsection-price .subtitle {
+  font-size: 24px;
+  color: #000;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

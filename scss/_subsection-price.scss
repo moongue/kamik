@@ -25,5 +25,80 @@
   p {
     margin-top: 15px;
     font-size: 18px;
+    line-height: 24px;
+    .telephone {
+      color: $blue-two;
+      font-size: 24px;
+      font-family: 'Proxima Nova Bold',sans-serif;
+    }
+    a {
+      color: $blue-four ;
+      border-bottom: 1px solid $blue-three;
+    }
+  }
+  .block-table {
+    margin-top: 35px;
+    .title-table {
+      font-family: 'Proxima Nova Bold', sans-serif;
+      font-size: 24px;
+    }
+    .table {
+      margin-top: 8px;
+      text-align: center;
+      white-space: nowrap;
+      @include md(overflow-x, scroll);
+      .row {
+        .col {
+          margin: 0 5px;
+        }
+        .col:nth-child(1) {
+          flex-basis: 10%;
+        }
+        .col:nth-child(2) {
+          flex-basis: 20%;
+        }
+        .col:nth-child(3) {
+          flex-basis: 11%;
+        }
+        .col:nth-child(4) {
+          flex-basis: 11%;
+        }
+        .col:nth-child(5) {
+          flex-basis: 28%;
+        }
+        .col:nth-child(6) {
+          flex-basis: 16%;
+        }
+      }
+      .block {
+        background: $white-four;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 16px;
+        color: $blue-two;
+        @include sm-block() {
+          font-size: 14px;
+          height: 26px;
+        }
+      }
+      .block-top {
+        padding: 0 4px;
+        font-size: 14px;
+        color: $black;
+        background: $blue-six;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .subtitle {
+    font-size: 24px;
+    color: $black;
+    margin-top: 20px;
   }
 }

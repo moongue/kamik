@@ -86,7 +86,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     @include md(display, none);
+    @include sm-block() {
+      padding: 20px;
+      background: #f0f0f0;
+      border-radius: 16px;
+    }
     nav {
       ul {
         display: flex;
@@ -98,7 +104,10 @@
         li {
           margin-right: 65px;
           @include lg(margin-right, 15px);
-          @include sm(margin-top, 10px);
+          @include sm-block() {
+            margin-top: 20px;
+            margin-right: 0;
+          }
           a {
             font-size: 18px;
             color: $black;
@@ -123,7 +132,8 @@
         color: $white;
         padding: 25px 5px;
         border-radius: 0 4px 4px 0;
-        box-shadow: 10px 10px 5px 0px rgba(247, 239, 247, 1);
+        box-shadow: 10px 10px 5px 0 rgba(247, 239, 247, 1);
+        @include xs(font-size, 14px);
       }
     }
   }
