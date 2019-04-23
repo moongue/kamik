@@ -7,14 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="plugins/slick-slider/slick.min.js"></script>
+    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="plugins/slick-slider/slick.css">
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Kamik</title>
 </head>
 <body>
+<div class="content-page">
 <!--HEADER-->
 <header id="header">
     <div class="wrapper">
@@ -104,34 +107,77 @@
 </section>
 <!--END PORTFOLIO-->
 
-<!--DOCUMENTS-->
-<section id="documents">
-    <div class="wrapper">
-        <button type="button" class="btn-download-doc">
-            <img src="images/icons/icon-download-doc.jpg" alt="">
-        </button>
-        <div class="request">
-            <div class="title">
-                Заявка на расчет
-            </div>
-            <div class="form">
-                <input type="text" placeholder="Введите ваше имя" class="styles-input">
-                <input type="number" placeholder="Введите номер телефона" class="styles-input">
-                <input type="email" placeholder="Введите ваш Email" class="styles-input">
-                <textarea name="message" id="" cols="30" rows="10" class="styles-textarea"
-                          placeholder="Ваше сообщение"></textarea>
-                <p>
-                    Прикрепить файл
-                </p>
-                <div class="attach">
-                    <input type="button" value="Обзор..."> <span>Файл не выбран.</span>
+    <!--DOCUMENTS-->
+    <section id="documents">
+        <div class="wrapper">
+            <div class="requirements">
+                <div class="one">
+                    <div class="cap">
+                        Требования к исходным материалам
+                    </div>
+                    <div class="inf">
+                        <p>
+                            Наше оборудование позволяет обрабатывать материалы следующей толщины:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>нержавеющую сталь 0,8-10,0 мм;</p>
+                            </li>
+                            <li>
+                                <p>алюминий 0,8-3,0 мм;</p>
+                            </li>
+                            <li>
+                                <p>черную сталь 0,8-20,0 мм.</p>
+                            </li>
+                        </ul>
+                        <p>
+                            Максимальный размер обрабатываемого листа не может превышать 3000 х 1500 мм, а его масса не
+                            должна
+                            быть более 920кг. Операции по обработке металла осуществляются в кислотной или азотной среде.
+                        </p>
+                    </div>
                 </div>
-                <input type="button" class="send" value="Отправить">
+                <div class="one">
+                    <div class="cap">Требования к документации</div>
+                    <div class="inf">
+                        <p>Чтобы обеспечить необходимое качество заказа, чертежи должны быть представлены в форматах DWG,
+                            DXG,
+                            STP, SLDPRT. Контуры для резки следует оформить в графических примитивах и нулевом слое. По
+                            отношению к требуемому изделию чертежи должны иметь масштаб 1:1. <br><br>
+                            Стоимость услуг обработки металла рассчитывается индивидуально. При этом учитывается геометрия
+                            контура, вид и толщина материала. Стоимость криволинейной резки будет выше, чем на прямой
+                            раскрой
+                            листа. Ориентировочные расценки Вы можете увидеть на нашем сайте.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn-download-doc">
+                <img src="images/icons/icon-download-doc.jpg" alt="">
+            </button>
+            <div class="request">
+                <div class="title">
+                    Заявка на расчет
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Введите ваше имя" class="styles-input">
+                    <input type="number" placeholder="Введите номер телефона" class="styles-input">
+                    <input type="email" placeholder="Введите ваш Email" class="styles-input">
+                    <textarea name="message" id="" cols="30" rows="10" class="styles-textarea"
+                              placeholder="Ваше сообщение"></textarea>
+                    <p>
+                        Прикрепить файл
+                    </p>
+                    <div class="fl_upld">
+                        <label><input id="fl_inp" type="file" name="file">Обзор</label>
+                        <div id="fl_nm">Файл не выбран</div>
+                    </div>
+                    <input type="button" class="send" value="Отправить">
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<!--END DOCUMENTS-->
+    </section>
+    <!--END DOCUMENTS-->
+</div>
 
 <!--FOOTER-->
 <footer id="footer">
@@ -162,7 +208,7 @@
                         +7 (499) 877-50-88
                     </p>
                     <div class="call">
-                        <a href="#" class="get-call">Заказать звонок</a>
+                        <a href="#telephone" class="get-call">Заказать звонок</a>
                     </div>
                 </div>
                 <div class="block lg-hide">
@@ -203,5 +249,38 @@
     </div>
 </footer>
 <!--END FOOTER-->
+
+<!--POPUP-->
+<div id="telephone" class="white-popup mfp-hide">
+    <button type="button" onClick="closePopup();" class="mfp-close">
+        <img src="images/icons/icon-close-popup.svg" alt="close">
+    </button>
+    <div class="cap-popup">
+        Свяжитесь с нами
+    </div>
+    <div class="form">
+        <div class="one-input">
+            <p class="necessarily">Имя</p>
+            <input type="text" class="styles-input-popup">
+        </div>
+        <div class="one-input">
+            <p class="necessarily">Телефон</p>
+            <input type="text" class="styles-input-popup">
+        </div>
+        <div class="one-input">
+            <p class="necessarily">Электронный адрес</p>
+            <input type="text" class="styles-input-popup">
+        </div>
+        <div class="one-input">
+            <p>Комментарий автора</p>
+            <textarea name="comment" class="styles-textarea-popup" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <div class="row__aic">
+        <p class="necessarily-left">- поля объязательные для заполнения</p>
+        <input type="button" class="btn-send" value="Отправить">
+    </div>
+</div>
+<!--END POPUP-->
 </body>
 </html>

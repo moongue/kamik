@@ -85,3 +85,106 @@ input[type=text] {
     padding: 0 5px;
   }
 }
+
+//POPUP
+.white-popup {
+  position: relative;
+  background: $white;
+  color: $dark;
+  border-radius: 8px;
+  height: auto;
+  padding: 20px;
+  max-width: 430px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  .mfp-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .cap-popup {
+    padding-bottom: 20px;
+    font-size: 24px;
+    color: $dark;
+    margin-right: 50px;
+    display: inline-block ;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background: $red;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .necessarily-left {
+    position: relative;
+    padding-left: 10px;
+    font-size: 14px;
+    display: inline-block;
+    &:before {
+      content: '';
+      background: $red;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 6px;
+    }
+  }
+  .row__aic {
+    margin-top: 20px;
+  }
+  .btn-send {
+    width: 120px;
+    height: 38px;
+    background: $blue-three;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: $white;
+  }
+  .form {
+    margin-top: 10px;
+    .one-input {
+      margin-top: 15px;
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        &.necessarily {
+          position: relative;
+          display: inline-block;
+          &:before {
+            content: '';
+            background: $red;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            position: absolute;
+            right: -7px;
+            top: 6px;
+          }
+        }
+      }
+    }
+
+    .styles-input-popup, .styles-textarea-popup {
+      width: 100%;
+      box-sizing: border-box;
+      padding:0 15px;
+      background: none;
+      border: 1px solid $grey-two;
+      border-radius: 4px;
+      height: 38px;
+      outline: none;
+    }
+    .styles-textarea-popup {
+      height: 80px;
+    }
+  }
+}
+//END POPUP

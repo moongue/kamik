@@ -85,7 +85,13 @@
       p {
         margin-top: 30px;
       }
-      .attach {
+      #fl_inp {
+        display: none;
+      }
+      #fl_nm {
+        margin-left: 10px;
+      }
+      .fl_upld {
         padding: 13px;
         display: flex;
         align-items: center;
@@ -93,7 +99,11 @@
         border-radius: 8px;
         margin-top: 3px;
         box-shadow: -2px 3px 31px -15px rgba(138, 137, 143, 1);
-        input {
+        label{
+          display: flex;
+          background: $grey-three;
+          justify-content: center;
+          align-items: center;
           width: 120px;
           height: 40px;
           color: $black;

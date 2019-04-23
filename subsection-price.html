@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="plugins/slick-slider/slick.min.js"></script>
+    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="plugins/slick-slider/slick.css">
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Kamik</title>
 </head>
@@ -425,7 +427,7 @@
                         +7 (499) 877-50-88
                     </p>
                     <div class="call">
-                        <a href="#" class="get-call">Заказать звонок</a>
+                        <a href="#telephone" class="get-call">Заказать звонок</a>
                     </div>
                 </div>
                 <div class="block lg-hide">
@@ -466,5 +468,38 @@
     </div>
 </footer>
 <!--END FOOTER-->
+
+<!--POPUP-->
+<div id="telephone" class="white-popup mfp-hide">
+    <button type="button" onClick="closePopup();" class="mfp-close">
+        <img src="images/icons/icon-close-popup.svg" alt="close">
+    </button>
+    <div class="cap-popup">
+        Свяжитесь с нами
+    </div>
+    <div class="form">
+        <div class="one-input">
+            <p class="necessarily">Имя</p>
+            <input type="text" class="styles-input-popup">
+        </div>
+        <div class="one-input">
+            <p class="necessarily">Телефон</p>
+            <input type="text" class="styles-input-popup">
+        </div>
+        <div class="one-input">
+            <p class="necessarily">Электронный адрес</p>
+            <input type="text" class="styles-input-popup">
+        </div>
+        <div class="one-input">
+            <p>Комментарий автора</p>
+            <textarea name="comment" class="styles-textarea-popup" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <div class="row__aic">
+        <p class="necessarily-left">- поля объязательные для заполнения</p>
+        <input type="button" class="btn-send" value="Отправить">
+    </div>
+</div>
+<!--END POPUP-->
 </body>
 </html>
