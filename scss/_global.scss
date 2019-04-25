@@ -181,6 +181,9 @@ input[type=text] {
       border-radius: 4px;
       height: 38px;
       outline: none;
+      &.inactive {
+        background: rgba(204, 204, 204, 0.3);
+      }
     }
     .styles-textarea-popup {
       height: 80px;

@@ -65,9 +65,14 @@
           background: $red-four;
           font-family: 'Proxima Nova Bold', sans-serif;
           text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           color: $white;
           margin-left: 25px;
           border: none;
+          white-space: nowrap;
+          font-size: 14px;
           @include xs(margin-left, 10px);
         }
       }

@@ -297,6 +297,11 @@ input[type=text] {
   outline: none;
 }
 
+.white-popup .form .styles-input-popup.inactive,
+.white-popup .form .styles-textarea-popup.inactive {
+  background: rgba(204, 204, 204, 0.3);
+}
+
 .white-popup .form .styles-textarea-popup {
   height: 80px;
 }
@@ -1781,9 +1786,20 @@ input[type=text] {
   background: #ae2b30;
   font-family: 'Proxima Nova Bold', sans-serif;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: #fff;
   margin-left: 25px;
   border: none;
+  white-space: nowrap;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 560px) {

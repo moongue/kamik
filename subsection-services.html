@@ -83,7 +83,7 @@
                         <div class="row__aic">
                             <div class="price-text"><img src="images/icons/icon-money.png" alt=""> цена от 4.9руб/метр
                             </div>
-                            <input type="button" class="btn-order" value="Заказать услугу">
+                            <a href="#fast-buy" class="btn-order">Заказать услугу</a>
                         </div>
                     </div>
                     <div class="download-price">
@@ -416,6 +416,38 @@
     <div class="row__aic">
         <p class="necessarily-left">- поля объязательные для заполнения</p>
         <input type="button" class="btn-send" value="Отправить">
+    </div>
+</div>
+
+<div id="fast-buy" class="white-popup mfp-hide">
+    <button type="button" onClick="closePopup();" class="mfp-close">
+        <img src="images/icons/icon-close-popup.svg" alt="close">
+    </button>
+    <div class="cap-popup">
+        Заказать услугу
+    </div>
+    <div class="form">
+        <div class="one-input">
+            <p class="necessarily">Имя</p>
+            <input type="text" class="styles-input-popup">
+        </div>
+        <div class="one-input">
+            <p class="necessarily">Телефон</p>
+            <input type="text" class="styles-input-popup">
+        </div>
+        <div class="one-input">
+            <p class="necessarily">Услуга</p>
+            <input type="text" class="styles-input-popup inactive" readonly
+            placeholder="Услуга">
+        </div>
+        <div class="one-input">
+            <p>Комментарий автора</p>
+            <textarea name="comment" class="styles-textarea-popup" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <div class="row__aic">
+        <p class="necessarily-left">- поля объязательные для заполнения</p>
+        <input type="button" class="btn-send" value="Заказать">
     </div>
 </div>
 <!--END POPUP-->
